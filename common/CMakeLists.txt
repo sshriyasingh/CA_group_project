@@ -4,7 +4,10 @@ add_library(common
     binaryio.cpp
     other2.cpp
     metadata.cpp
+    image_io.cpp 
 )
+
+target_include_directories(common PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})
 
 # Use this line only if you have dependencies from this library to GSL
 target_link_libraries(common PRIVATE Microsoft.GSL::GSL)

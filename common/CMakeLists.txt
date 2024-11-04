@@ -3,6 +3,7 @@ add_library(common
     progargs.cpp
     binaryio.cpp
     other2.cpp
+    metadata.cpp
 )
 
 # Use this line only if you have dependencies from this library to GSL

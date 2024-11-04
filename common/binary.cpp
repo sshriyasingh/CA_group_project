@@ -2,6 +2,13 @@
 #include <fstream>
 #include <stdexcept>
 #include <iostream>
+#include "image_types.hpp"
+#include <cstdint>
+
+// Constants for readability
+constexpr int MaxByteValue = 255;
+constexpr int ThreeBytesPerPixel = 3;
+constexpr int SixBytesPerPixel = 6;
 
 Image read_ppm(const std::string& file_path) {
     std::ifstream file(file_path, std::ios::binary);
@@ -59,4 +66,58 @@ Image read_ppm(const std::string& file_path) {
     }
 
     return image;
+}
+
+void write_ppm(const std::string& file_path, const Image& image) {
+    // Open the file in binary mode
+    std::ofstream out_file(file_path, std::ios::binary);
+    if (!out_file) {
+        throw std::runtime_error("Could not open file for writing: " + file_path);
+    }
+
+    // Write the PPM header
+    out_file << "P6\n" << image.width << " " << image.height << "\n" << image.max_color_value << "\n";
+
+    // Determine if each color channel is 1 byte or 2 bytes based on max_color_value
+    bool use_1_byte_per_channel = (image.max_color_value <= MaxByteValue);
+
+    // Write pixel data
+    for (const auto& pixel : image.pixels) {
+        if (use_1_byte_per_channel) {
+            // 1 byte per color channel (8-bit)
+            uint8_t r = static_cast<uint8_t>(pixel.r);
+            uint8_t g = static_cast<uint8_t>(pixel.g);
+            uint8_t b = static_cast<uint8_t>(pixel.b);
+            out_file.write(reinterpret_cast<const char*>(&r), sizeof(r)); // NOLINTNEXTLINE(cppcoreguidelines-pro-type-reinterpret-cast)
+            out_file.write(reinterpret_cast<const char*>(&g), sizeof(g)); // NOLINTNEXTLINE(cppcoreguidelines-pro-type-reinterpret-cast)
+            out_file.write(reinterpret_cast<const char*>(&b), sizeof(b)); // NOLINTNEXTLINE(cppcoreguidelines-pro-type-reinterpret-cast)
+        } else {
+            // 2 bytes per color channel (16-bit), in big endian
+            uint16_t r = pixel.r;
+            uint16_t g = pixel.g;
+            uint16_t b = pixel.b;
+
+            // Writing each color channel as 2 bytes in big-endian order
+            uint8_t r_high = static_cast<uint8_t>((r >> 8) & 0xFF);
+            uint8_t r_low = static_cast<uint8_t>(r & 0xFF);
+            uint8_t g_high = static_cast<uint8_t>((g >> 8) & 0xFF);
+            uint8_t g_low = static_cast<uint8_t>(g & 0xFF);
+            uint8_t b_high = static_cast<uint8_t>((b >> 8) & 0xFF);
+            uint8_t b_low = static_cast<uint8_t>(b & 0xFF);
+
+            out_file.write(reinterpret_cast<const char*>(&r_high), sizeof(r_high)); // NOLINTNEXTLINE(cppcoreguidelines-pro-type-reinterpret-cast)
+            out_file.write(reinterpret_cast<const char*>(&r_low), sizeof(r_low));   // NOLINTNEXTLINE(cppcoreguidelines-pro-type-reinterpret-cast)
+            out_file.write(reinterpret_cast<const char*>(&g_high), sizeof(g_high)); // NOLINTNEXTLINE(cppcoreguidelines-pro-type-reinterpret-cast)
+            out_file.write(reinterpret_cast<const char*>(&g_low), sizeof(g_low));   // NOLINTNEXTLINE(cppcoreguidelines-pro-type-reinterpret-cast)
+            out_file.write(reinterpret_cast<const char*>(&b_high), sizeof(b_high)); // NOLINTNEXTLINE(cppcoreguidelines-pro-type-reinterpret-cast)
+            out_file.write(reinterpret_cast<const char*>(&b_low), sizeof(b_low));   // NOLINTNEXTLINE(cppcoreguidelines-pro-type-reinterpret-cast)
+        }
+    }
+
+    // Close the file
+    out_file.close();
+
+    if (!out_file) {
+        throw std::runtime_error("Error writing to file: " + file_path);
+    }
 }

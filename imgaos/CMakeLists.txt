@@ -1,6 +1,6 @@
 # Add to this list all files related to imgaos library
 add_library(imgaos
-    image.cpp
+    image_io.cpp
     other1.cpp
     other2.cpp
 )

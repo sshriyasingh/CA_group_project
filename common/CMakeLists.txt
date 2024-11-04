@@ -1,7 +1,7 @@
 # Add to this list all files related to common library
 add_library(common
     progargs.cpp
-    binaryio.cpp
+    binary.cpp
     other2.cpp
     metadata.cpp
     image_io.cpp 

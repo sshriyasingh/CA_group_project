@@ -39,6 +39,7 @@ include_directories(PUBLIC .)
 add_subdirectory(common)
 add_subdirectory(imgaos)
 add_subdirectory(imgsoa)
+
 add_subdirectory(imtool−aos)
 add_subdirectory(imtool−soa)
 

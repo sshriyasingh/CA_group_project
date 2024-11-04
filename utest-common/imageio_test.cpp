@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "common/imageio.hpp"       // Include the read_ppm function
+#include "common/binaryio.hpp"       // Include the read_ppm function
 #include <string>
 
 TEST(ReadPPMTest, ValidPPMFile) {

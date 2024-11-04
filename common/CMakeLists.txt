@@ -2,9 +2,7 @@
 add_library(common
     progargs.cpp
     binary.cpp
-    other2.cpp
     metadata.cpp
-    image_io.cpp 
 )
 
 target_include_directories(common PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

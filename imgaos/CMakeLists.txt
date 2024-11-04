@@ -1,8 +1,6 @@
 # Add to this list all files related to imgaos library
 add_library(imgaos
-    image_io.cpp
-    other1.cpp
-    other2.cpp
+    imageaos.cpp
 )
 
 # Use this line only if you have dependencies from this library to GSL

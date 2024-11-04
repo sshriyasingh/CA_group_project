@@ -10,6 +10,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.30.4/CMakeSystem.cmake"
   "CMakeLists.txt"
   "gsl-populate-prefix/tmp/gsl-populate-mkdirs.cmake"
+<<<<<<< HEAD
   "/usr/local/Cellar/cmake/3.30.4/share/cmake/Modules/CMakeGenericSystem.cmake"
   "/usr/local/Cellar/cmake/3.30.4/share/cmake/Modules/CMakeInitializeConfigs.cmake"
   "/usr/local/Cellar/cmake/3.30.4/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
@@ -26,6 +27,24 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.30.4/share/cmake/Modules/Platform/Darwin-Initialize.cmake"
   "/usr/local/Cellar/cmake/3.30.4/share/cmake/Modules/Platform/Darwin.cmake"
   "/usr/local/Cellar/cmake/3.30.4/share/cmake/Modules/Platform/UnixPaths.cmake"
+=======
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeGenericSystem.cmake"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeInitializeConfigs.cmake"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeSystemSpecificInformation.cmake"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/ExternalProject.cmake"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/ExternalProject/PatchInfo.txt.in"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/ExternalProject/RepositoryInfo.txt.in"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/ExternalProject/UpdateInfo.txt.in"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/ExternalProject/cfgcmd.txt.in"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/ExternalProject/gitclone.cmake.in"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/ExternalProject/gitupdate.cmake.in"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/ExternalProject/mkdirs.cmake.in"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/ExternalProject/shared_internal_commands.cmake"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Platform/Darwin-Initialize.cmake"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Platform/Darwin.cmake"
+  "/opt/homebrew/Cellar/cmake/3.30.5/share/cmake/Modules/Platform/UnixPaths.cmake"
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
   )
 
 # The corresponding makefile is:

@@ -1,7 +1,11 @@
 set(CMAKE_C_COMPILER "/Library/Developer/CommandLineTools/usr/bin/cc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "AppleClang")
+<<<<<<< HEAD:build/CMakeFiles/3.30.4/CMakeCCompiler.cmake
 set(CMAKE_C_COMPILER_VERSION "14.0.0.14000029")
+=======
+set(CMAKE_C_COMPILER_VERSION "15.0.0.15000040")
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a:build/CMakeFiles/3.30.5/CMakeCCompiler.cmake
 set(CMAKE_C_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_C_COMPILER_WRAPPER "")
 set(CMAKE_C_STANDARD_COMPUTED_DEFAULT "17")
@@ -31,7 +35,11 @@ set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
 set(CMAKE_C_COMPILER_LINKER "/Library/Developer/CommandLineTools/usr/bin/ld")
 set(CMAKE_C_COMPILER_LINKER_ID "AppleClang")
+<<<<<<< HEAD:build/CMakeFiles/3.30.4/CMakeCCompiler.cmake
 set(CMAKE_C_COMPILER_LINKER_VERSION 820.1)
+=======
+set(CMAKE_C_COMPILER_LINKER_VERSION 1015.7)
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a:build/CMakeFiles/3.30.5/CMakeCCompiler.cmake
 set(CMAKE_C_COMPILER_LINKER_FRONTEND_VARIANT GNU)
 set(CMAKE_MT "")
 set(CMAKE_TAPI "/Library/Developer/CommandLineTools/usr/bin/tapi")
@@ -75,7 +83,14 @@ endif()
 
 
 
+<<<<<<< HEAD:build/CMakeFiles/3.30.4/CMakeCCompiler.cmake
 set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include")
 set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
 set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/System/Library/Frameworks")
+=======
+set(CMAKE_C_IMPLICIT_INCLUDE_DIRECTORIES "/Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include;/Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk/usr/include;/Library/Developer/CommandLineTools/usr/include")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
+set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a:build/CMakeFiles/3.30.5/CMakeCCompiler.cmake

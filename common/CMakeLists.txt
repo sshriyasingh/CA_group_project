@@ -1,10 +1,8 @@
 # Add to this list all files related to common library
 add_library(common
     progargs.cpp
-    binaryio.cpp
-    other2.cpp
+    binary.cpp
     metadata.cpp
-    image_io.cpp 
 )
 
 target_include_directories(common PUBLIC ${CMAKE_CURRENT_SOURCE_DIR})

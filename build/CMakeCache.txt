@@ -123,8 +123,44 @@ CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
 //Man documentation (DATAROOTDIR/man)
 CMAKE_INSTALL_MANDIR:PATH=
 
+//User executables (bin)
+CMAKE_INSTALL_BINDIR:PATH=bin
+
+//Read-only architecture-independent data (DATAROOTDIR)
+CMAKE_INSTALL_DATADIR:PATH=
+
+//Read-only architecture-independent data root (share)
+CMAKE_INSTALL_DATAROOTDIR:PATH=share
+
+//Documentation root (DATAROOTDIR/doc/PROJECT_NAME)
+CMAKE_INSTALL_DOCDIR:PATH=
+
+//C header files (include)
+CMAKE_INSTALL_INCLUDEDIR:PATH=include
+
+//Info documentation (DATAROOTDIR/info)
+CMAKE_INSTALL_INFODIR:PATH=
+
+//Object code libraries (lib)
+CMAKE_INSTALL_LIBDIR:PATH=lib
+
+//Program executables (libexec)
+CMAKE_INSTALL_LIBEXECDIR:PATH=libexec
+
+//Locale-dependent data (DATAROOTDIR/locale)
+CMAKE_INSTALL_LOCALEDIR:PATH=
+
+//Modifiable single-machine data (var)
+CMAKE_INSTALL_LOCALSTATEDIR:PATH=var
+
+//Man documentation (DATAROOTDIR/man)
+CMAKE_INSTALL_MANDIR:PATH=
+
 //Path to a program.
 CMAKE_INSTALL_NAME_TOOL:FILEPATH=/usr/bin/install_name_tool
+
+//C header files for non-gcc (/usr/include)
+CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
 
 //C header files for non-gcc (/usr/include)
 CMAKE_INSTALL_OLDINCLUDEDIR:PATH=/usr/include
@@ -310,7 +346,11 @@ FETCHCONTENT_UPDATES_DISCONNECTED_GSL:BOOL=OFF
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
 //Value Computed by CMake
+<<<<<<< HEAD
 GSL_BINARY_DIR:STATIC=/Users/anchita14/CA_group_project/build/_deps/gsl-build
+=======
+GSL_BINARY_DIR:STATIC=/Users/sanjana/CA_group_project/build/_deps/gsl-build
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
 
 //Generate and install GSL target
 GSL_INSTALL:BOOL=OFF
@@ -319,7 +359,11 @@ GSL_INSTALL:BOOL=OFF
 GSL_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
+<<<<<<< HEAD
 GSL_SOURCE_DIR:STATIC=/Users/anchita14/CA_group_project/build/_deps/gsl-src
+=======
+GSL_SOURCE_DIR:STATIC=/Users/sanjana/CA_group_project/build/_deps/gsl-src
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
 
 //Build and perform GSL tests
 GSL_TEST:BOOL=OFF
@@ -333,34 +377,57 @@ GTEST_HAS_ABSL:BOOL=OFF
 INSTALL_GTEST:BOOL=ON
 
 //Value Computed by CMake
+<<<<<<< HEAD
 gmock_BINARY_DIR:STATIC=/Users/anchita14/CA_group_project/build/_deps/googletest-build/googlemock
+=======
+gmock_BINARY_DIR:STATIC=/Users/sanjana/CA_group_project/build/_deps/googletest-build/googlemock
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
 
 //Value Computed by CMake
 gmock_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
+<<<<<<< HEAD
 gmock_SOURCE_DIR:STATIC=/Users/anchita14/CA_group_project/build/_deps/googletest-src/googlemock
+=======
+gmock_SOURCE_DIR:STATIC=/Users/sanjana/CA_group_project/build/_deps/googletest-src/googlemock
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
 
 //Build all of Google Mock's own tests.
 gmock_build_tests:BOOL=OFF
 
 //Value Computed by CMake
+<<<<<<< HEAD
 googletest-distribution_BINARY_DIR:STATIC=/Users/anchita14/CA_group_project/build/_deps/googletest-build
+=======
+googletest-distribution_BINARY_DIR:STATIC=/Users/sanjana/CA_group_project/build/_deps/googletest-build
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
 
 //Value Computed by CMake
 googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
+<<<<<<< HEAD
 googletest-distribution_SOURCE_DIR:STATIC=/Users/anchita14/CA_group_project/build/_deps/googletest-src
 
 //Value Computed by CMake
 gtest_BINARY_DIR:STATIC=/Users/anchita14/CA_group_project/build/_deps/googletest-build/googletest
+=======
+googletest-distribution_SOURCE_DIR:STATIC=/Users/sanjana/CA_group_project/build/_deps/googletest-src
+
+//Value Computed by CMake
+gtest_BINARY_DIR:STATIC=/Users/sanjana/CA_group_project/build/_deps/googletest-build/googletest
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
 
 //Value Computed by CMake
 gtest_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
+<<<<<<< HEAD
 gtest_SOURCE_DIR:STATIC=/Users/anchita14/CA_group_project/build/_deps/googletest-src/googletest
+=======
+gtest_SOURCE_DIR:STATIC=/Users/sanjana/CA_group_project/build/_deps/googletest-src/googletest
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -379,7 +446,11 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_hide_internal_symbols:BOOL=OFF
 
 //Value Computed by CMake
+<<<<<<< HEAD
 imtool_BINARY_DIR:STATIC=/Users/anchita14/CA_group_project/build
+=======
+imtool_BINARY_DIR:STATIC=/Users/sanjana/CA_group_project/build
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
 
 //Value Computed by CMake
 imtool_IS_TOP_LEVEL:STATIC=ON
@@ -403,7 +474,11 @@ CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
 CMAKE_CACHE_MINOR_VERSION:INTERNAL=30
 //Patch version of cmake used to create the current loaded cache
+<<<<<<< HEAD
 CMAKE_CACHE_PATCH_VERSION:INTERNAL=4
+=======
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=5
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -468,7 +543,11 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
+<<<<<<< HEAD
 CMAKE_HOME_DIRECTORY:INTERNAL=/Users/anchita14/CA_group_project
+=======
+CMAKE_HOME_DIRECTORY:INTERNAL=/Users/sanjana/CA_group_project
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR
@@ -574,7 +653,11 @@ GSL_VS_ADD_NATIVE_VISUALIZERS:INTERNAL=FALSE
 //CMAKE_INSTALL_PREFIX during last run
 _GNUInstallDirs_LAST_CMAKE_INSTALL_PREFIX:INTERNAL=/usr/local
 cmake_package_name:INTERNAL=GTest
+<<<<<<< HEAD
 generated_dir:INTERNAL=/Users/anchita14/CA_group_project/build/_deps/googletest-build/googletest/generated
+=======
+generated_dir:INTERNAL=/Users/sanjana/CA_group_project/build/_deps/googletest-build/googletest/generated
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
 //ADVANCED property for variable: gmock_build_tests
 gmock_build_tests-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_build_samples

@@ -10,7 +10,7 @@ TEST(MetadataTest, GetMetadata) {
     image.width = 100;
     image.height = 200;
     image.max_color_value = 255;
-    image.pixels = std::vector<Pixel>(image.width * image.height);  // Initialize pixel data
+    image.pixels = std::vector<Pixel>(static_cast<size_t>(image.width) * static_cast<size_t>(image.height));  // Initialize pixel data
 
     // Call get_metadata to extract metadata
     Metadata metadata = get_metadata(image);

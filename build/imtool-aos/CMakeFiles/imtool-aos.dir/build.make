@@ -44,19 +44,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.30.4/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.30.4/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sanjana/CA_group_project
+CMAKE_SOURCE_DIR = /Users/anchita14/CA_group_project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sanjana/CA_group_project/build
+CMAKE_BINARY_DIR = /Users/anchita14/CA_group_project/build
 
 # Include any dependencies generated for this target.
 include imtool-aos/CMakeFiles/imtool-aos.dir/depend.make
@@ -70,18 +70,18 @@ include imtool-aos/CMakeFiles/imtool-aos.dir/progress.make
 include imtool-aos/CMakeFiles/imtool-aos.dir/flags.make
 
 imtool-aos/CMakeFiles/imtool-aos.dir/main.cpp.o: imtool-aos/CMakeFiles/imtool-aos.dir/flags.make
-imtool-aos/CMakeFiles/imtool-aos.dir/main.cpp.o: /Users/sanjana/CA_group_project/imtool-aos/main.cpp
+imtool-aos/CMakeFiles/imtool-aos.dir/main.cpp.o: /Users/anchita14/CA_group_project/imtool-aos/main.cpp
 imtool-aos/CMakeFiles/imtool-aos.dir/main.cpp.o: imtool-aos/CMakeFiles/imtool-aos.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/sanjana/CA_group_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object imtool-aos/CMakeFiles/imtool-aos.dir/main.cpp.o"
-	cd /Users/sanjana/CA_group_project/build/imtool-aos && $(CMAKE_COMMAND) -E __run_co_compile --tidy="clang−tidy;−format−style=file;−header−filter=.;--extra-arg-before=--driver-mode=g++" --source=/Users/sanjana/CA_group_project/imtool-aos/main.cpp -- /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT imtool-aos/CMakeFiles/imtool-aos.dir/main.cpp.o -MF CMakeFiles/imtool-aos.dir/main.cpp.o.d -o CMakeFiles/imtool-aos.dir/main.cpp.o -c /Users/sanjana/CA_group_project/imtool-aos/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/anchita14/CA_group_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object imtool-aos/CMakeFiles/imtool-aos.dir/main.cpp.o"
+	cd /Users/anchita14/CA_group_project/build/imtool-aos && $(CMAKE_COMMAND) -E __run_co_compile --tidy="clang-tidy;-format-style=file;-header-filter=.;--extra-arg-before=--driver-mode=g++" --source=/Users/anchita14/CA_group_project/imtool-aos/main.cpp -- /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT imtool-aos/CMakeFiles/imtool-aos.dir/main.cpp.o -MF CMakeFiles/imtool-aos.dir/main.cpp.o.d -o CMakeFiles/imtool-aos.dir/main.cpp.o -c /Users/anchita14/CA_group_project/imtool-aos/main.cpp
 
 imtool-aos/CMakeFiles/imtool-aos.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/imtool-aos.dir/main.cpp.i"
-	cd /Users/sanjana/CA_group_project/build/imtool-aos && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/sanjana/CA_group_project/imtool-aos/main.cpp > CMakeFiles/imtool-aos.dir/main.cpp.i
+	cd /Users/anchita14/CA_group_project/build/imtool-aos && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/anchita14/CA_group_project/imtool-aos/main.cpp > CMakeFiles/imtool-aos.dir/main.cpp.i
 
 imtool-aos/CMakeFiles/imtool-aos.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/imtool-aos.dir/main.cpp.s"
-	cd /Users/sanjana/CA_group_project/build/imtool-aos && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/sanjana/CA_group_project/imtool-aos/main.cpp -o CMakeFiles/imtool-aos.dir/main.cpp.s
+	cd /Users/anchita14/CA_group_project/build/imtool-aos && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/anchita14/CA_group_project/imtool-aos/main.cpp -o CMakeFiles/imtool-aos.dir/main.cpp.s
 
 # Object files for target imtool-aos
 imtool__aos_OBJECTS = \
@@ -95,18 +95,18 @@ imtool-aos/imtool-aos: imtool-aos/CMakeFiles/imtool-aos.dir/build.make
 imtool-aos/imtool-aos: imgaos/libimgaos.a
 imtool-aos/imtool-aos: common/libcommon.a
 imtool-aos/imtool-aos: imtool-aos/CMakeFiles/imtool-aos.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/sanjana/CA_group_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable imtool-aos"
-	cd /Users/sanjana/CA_group_project/build/imtool-aos && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imtool-aos.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/anchita14/CA_group_project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable imtool-aos"
+	cd /Users/anchita14/CA_group_project/build/imtool-aos && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/imtool-aos.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 imtool-aos/CMakeFiles/imtool-aos.dir/build: imtool-aos/imtool-aos
 .PHONY : imtool-aos/CMakeFiles/imtool-aos.dir/build
 
 imtool-aos/CMakeFiles/imtool-aos.dir/clean:
-	cd /Users/sanjana/CA_group_project/build/imtool-aos && $(CMAKE_COMMAND) -P CMakeFiles/imtool-aos.dir/cmake_clean.cmake
+	cd /Users/anchita14/CA_group_project/build/imtool-aos && $(CMAKE_COMMAND) -P CMakeFiles/imtool-aos.dir/cmake_clean.cmake
 .PHONY : imtool-aos/CMakeFiles/imtool-aos.dir/clean
 
 imtool-aos/CMakeFiles/imtool-aos.dir/depend:
-	cd /Users/sanjana/CA_group_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/sanjana/CA_group_project /Users/sanjana/CA_group_project/imtool-aos /Users/sanjana/CA_group_project/build /Users/sanjana/CA_group_project/build/imtool-aos /Users/sanjana/CA_group_project/build/imtool-aos/CMakeFiles/imtool-aos.dir/DependInfo.cmake "--color=$(COLOR)"
+	cd /Users/anchita14/CA_group_project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/anchita14/CA_group_project /Users/anchita14/CA_group_project/imtool-aos /Users/anchita14/CA_group_project/build /Users/anchita14/CA_group_project/build/imtool-aos /Users/anchita14/CA_group_project/build/imtool-aos/CMakeFiles/imtool-aos.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : imtool-aos/CMakeFiles/imtool-aos.dir/depend
 

@@ -49,8 +49,4 @@ add_subdirectory(utest-common)
 add_subdirectory(utest-imgaos)
 add_subdirectory(utest-imgsoa)
 add_subdirectory(ftest-aos)
-<<<<<<< HEAD
 add_subdirectory(ftest-soa)
-=======
-add_subdirectory(ftest-soa)
->>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a

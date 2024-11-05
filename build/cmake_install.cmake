@@ -1,4 +1,4 @@
-# Install script for directory: /Users/sanjana/CA_group_project
+# Install script for directory: /Users/anchita14/CA_group_project
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,62 +39,62 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/_deps/googletest-build/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/_deps/googletest-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/_deps/gsl-build/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/_deps/gsl-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/common/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/imgaos/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/imgaos/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/imgsoa/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/imgsoa/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/imtool-aos/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/imtool-aos/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/imtool-soa/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/imtool-soa/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/utest-common/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/utest-common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/utest-imgaos/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/utest-imgaos/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/utest-imgsoa/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/utest-imgsoa/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/ftest-aos/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/ftest-aos/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/ftest-soa/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/ftest-soa/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -112,6 +112,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/Users/sanjana/CA_group_project/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/anchita14/CA_group_project/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

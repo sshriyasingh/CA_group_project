@@ -1,4 +1,4 @@
-# Install script for directory: /Users/sanjana/CA_group_project/build/_deps/gsl-src
+# Install script for directory: /Users/anchita14/CA_group_project/build/_deps/gsl-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,6 +39,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/sanjana/CA_group_project/build/_deps/gsl-build/include/cmake_install.cmake")
+  include("/Users/anchita14/CA_group_project/build/_deps/gsl-build/include/cmake_install.cmake")
 endif()
 

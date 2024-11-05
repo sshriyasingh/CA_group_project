@@ -48,19 +48,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake
+CMAKE_COMMAND = /usr/local/Cellar/cmake/3.30.4/bin/cmake
 
 # The command to remove a file.
-RM = /opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -E rm -f
+RM = /usr/local/Cellar/cmake/3.30.4/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/sanjana/CA_group_project
+CMAKE_SOURCE_DIR = /Users/anchita14/CA_group_project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/sanjana/CA_group_project/build
+CMAKE_BINARY_DIR = /Users/anchita14/CA_group_project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,7 +68,7 @@ CMAKE_BINARY_DIR = /Users/sanjana/CA_group_project/build
 # Special rule for the target test
 test:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running tests..."
-	/opt/homebrew/Cellar/cmake/3.30.5/bin/ctest --force-new-ctest-process $(ARGS)
+	/usr/local/Cellar/cmake/3.30.4/bin/ctest --force-new-ctest-process $(ARGS)
 .PHONY : test
 
 # Special rule for the target test
@@ -78,7 +78,7 @@ test/fast: test
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake cache editor..."
-	/opt/homebrew/Cellar/cmake/3.30.5/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.30.4/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -88,7 +88,7 @@ edit_cache/fast: edit_cache
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Running CMake to regenerate build system..."
-	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/usr/local/Cellar/cmake/3.30.4/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -107,49 +107,49 @@ list_install_components/fast: list_install_components
 # Special rule for the target install
 install: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.30.4/bin/cmake -P cmake_install.cmake
 .PHONY : install
 
 # Special rule for the target install
 install/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Install the project..."
-	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.30.4/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.30.4/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local
 
 # Special rule for the target install/local
 install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing only the local directory..."
-	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.30.4/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
 
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.30.4/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip
 
 # Special rule for the target install/strip
 install/strip/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --cyan "Installing the project stripped..."
-	/opt/homebrew/Cellar/cmake/3.30.5/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+	/usr/local/Cellar/cmake/3.30.4/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
 .PHONY : install/strip/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/sanjana/CA_group_project/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/sanjana/CA_group_project/build/CMakeFiles /Users/sanjana/CA_group_project/build/imgaos//CMakeFiles/progress.marks
-	cd /Users/sanjana/CA_group_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgaos/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/sanjana/CA_group_project/build/CMakeFiles 0
+	cd /Users/anchita14/CA_group_project/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/anchita14/CA_group_project/build/CMakeFiles /Users/anchita14/CA_group_project/build/imgaos//CMakeFiles/progress.marks
+	cd /Users/anchita14/CA_group_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgaos/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anchita14/CA_group_project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/sanjana/CA_group_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgaos/clean
+	cd /Users/anchita14/CA_group_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgaos/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/sanjana/CA_group_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgaos/preinstall
+	cd /Users/anchita14/CA_group_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgaos/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/sanjana/CA_group_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgaos/preinstall
+	cd /Users/anchita14/CA_group_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgaos/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/sanjana/CA_group_project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/anchita14/CA_group_project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 imgaos/CMakeFiles/imgaos.dir/rule:
-	cd /Users/sanjana/CA_group_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgaos/CMakeFiles/imgaos.dir/rule
+	cd /Users/anchita14/CA_group_project/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgaos/CMakeFiles/imgaos.dir/rule
 .PHONY : imgaos/CMakeFiles/imgaos.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ imgaos: imgaos/CMakeFiles/imgaos.dir/rule
 
 # fast build rule for target.
 imgaos/fast:
-	cd /Users/sanjana/CA_group_project/build && $(MAKE) $(MAKESILENT) -f imgaos/CMakeFiles/imgaos.dir/build.make imgaos/CMakeFiles/imgaos.dir/build
+	cd /Users/anchita14/CA_group_project/build && $(MAKE) $(MAKESILENT) -f imgaos/CMakeFiles/imgaos.dir/build.make imgaos/CMakeFiles/imgaos.dir/build
 .PHONY : imgaos/fast
 
 imageaos.o: imageaos.cpp.o
@@ -190,7 +190,7 @@ imageaos.o: imageaos.cpp.o
 
 # target to build an object file
 imageaos.cpp.o:
-	cd /Users/sanjana/CA_group_project/build && $(MAKE) $(MAKESILENT) -f imgaos/CMakeFiles/imgaos.dir/build.make imgaos/CMakeFiles/imgaos.dir/imageaos.cpp.o
+	cd /Users/anchita14/CA_group_project/build && $(MAKE) $(MAKESILENT) -f imgaos/CMakeFiles/imgaos.dir/build.make imgaos/CMakeFiles/imgaos.dir/imageaos.cpp.o
 .PHONY : imageaos.cpp.o
 
 imageaos.i: imageaos.cpp.i
@@ -198,7 +198,7 @@ imageaos.i: imageaos.cpp.i
 
 # target to preprocess a source file
 imageaos.cpp.i:
-	cd /Users/sanjana/CA_group_project/build && $(MAKE) $(MAKESILENT) -f imgaos/CMakeFiles/imgaos.dir/build.make imgaos/CMakeFiles/imgaos.dir/imageaos.cpp.i
+	cd /Users/anchita14/CA_group_project/build && $(MAKE) $(MAKESILENT) -f imgaos/CMakeFiles/imgaos.dir/build.make imgaos/CMakeFiles/imgaos.dir/imageaos.cpp.i
 .PHONY : imageaos.cpp.i
 
 imageaos.s: imageaos.cpp.s
@@ -206,7 +206,7 @@ imageaos.s: imageaos.cpp.s
 
 # target to generate assembly for a file
 imageaos.cpp.s:
-	cd /Users/sanjana/CA_group_project/build && $(MAKE) $(MAKESILENT) -f imgaos/CMakeFiles/imgaos.dir/build.make imgaos/CMakeFiles/imgaos.dir/imageaos.cpp.s
+	cd /Users/anchita14/CA_group_project/build && $(MAKE) $(MAKESILENT) -f imgaos/CMakeFiles/imgaos.dir/build.make imgaos/CMakeFiles/imgaos.dir/imageaos.cpp.s
 .PHONY : imageaos.cpp.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/sanjana/CA_group_project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/anchita14/CA_group_project/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

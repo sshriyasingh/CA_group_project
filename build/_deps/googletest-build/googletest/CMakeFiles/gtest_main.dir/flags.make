@@ -4,9 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /Users/sanjana/CA_group_project/build/_deps/googletest-src/googletest/include -isystem /Users/sanjana/CA_group_project/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -isystem /Users/anchita14/CA_group_project/build/_deps/googletest-src/googletest/include -isystem /Users/anchita14/CA_group_project/build/_deps/googletest-src/googletest
 
-CXX_FLAGSarm64 = -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk  -DGTEST_HAS_PTHREAD=1   −Wall −Wextra −Werror −pedantic −pedantic−errors −Wconversion −Wsign−conversion
-
-CXX_FLAGS = -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk  -DGTEST_HAS_PTHREAD=1   −Wall −Wextra −Werror −pedantic −pedantic−errors −Wconversion −Wsign−conversion
+CXX_FLAGS = -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6  -DGTEST_HAS_PTHREAD=1   -Wall -Wextra -Werror -pedantic -pedantic-errors -Wconversion -Wsign-conversion
 

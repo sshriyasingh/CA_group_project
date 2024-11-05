@@ -4,9 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/sanjana/CA_group_project/PUBLIC -I/Users/sanjana/CA_group_project/. -I/Users/sanjana/CA_group_project/common
+CXX_INCLUDES = -I/Users/anchita14/CA_group_project/PUBLIC -I/Users/anchita14/CA_group_project/. -I/Users/anchita14/CA_group_project/common
 
-CXX_FLAGSarm64 = -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk −Wall −Wextra −Werror −pedantic −pedantic−errors −Wconversion −Wsign−conversion
-
-CXX_FLAGS = -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.0.sdk −Wall −Wextra −Werror −pedantic −pedantic−errors −Wconversion −Wsign−conversion
+CXX_FLAGS = -std=c++20 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -Wall -Wextra -Werror -pedantic -pedantic-errors -Wconversion -Wsign-conversion
 

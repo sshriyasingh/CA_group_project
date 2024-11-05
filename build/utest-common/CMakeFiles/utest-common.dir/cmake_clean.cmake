@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/utest-common.dir/binaryio_test.cpp.o"
-  "CMakeFiles/utest-common.dir/binaryio_test.cpp.o.d"
+  "CMakeFiles/utest-common.dir/metadata_test.cpp.o"
+  "CMakeFiles/utest-common.dir/metadata_test.cpp.o.d"
   "utest-common"
   "utest-common.pdb"
 )

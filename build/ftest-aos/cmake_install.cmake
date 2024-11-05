@@ -1,4 +1,4 @@
-# Install script for directory: /Users/sanjana/CA_group_project/ftest-aos
+# Install script for directory: /Users/anchita14/CA_group_project/ftest-aos
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

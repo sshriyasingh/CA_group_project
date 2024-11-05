@@ -40,24 +40,23 @@ Image read_ppm(const std::string& file_path) {
     image.max_color_value = max_color_value;
 
     // Determine if each color channel is 1 byte or 2 bytes
-    bool is_two_byte_color = (max_color_value > 255);
-    int pixel_size = is_two_byte_color ? 6 : 3;
-    image.pixels.resize(width * height);
+    bool is_two_byte_color = (max_color_value > MaxByteValue);
+    image.pixels.resize(static_cast<std::size_t>(width) * static_cast<std::size_t>(height));
 
     // Read pixel data
     for (int i = 0; i < width * height; ++i) {
         if (is_two_byte_color) {
             // 6 bytes per pixel (2 bytes for each color channel)
-            uint16_t r = (file.get() << 8) | file.get();
-            uint16_t g = (file.get() << 8) | file.get();
-            uint16_t b = (file.get() << 8) | file.get();
-            image.pixels[i] = {r, g, b};
+            uint16_t r = static_cast<uint16_t>((file.get() << 8) | file.get());
+            uint16_t g = static_cast<uint16_t>((file.get() << 8) | file.get());
+            uint16_t b = static_cast<uint16_t>((file.get() << 8) | file.get());
+            image.pixels[static_cast<std::size_t>(i)] = {r, g, b};
         } else {
             // 3 bytes per pixel (1 byte for each color channel)
-            uint8_t r = file.get();
-            uint8_t g = file.get();
-            uint8_t b = file.get();
-            image.pixels[i] = {r, g, b};
+            uint8_t r = static_cast<uint8_t>(file.get());
+            uint8_t g = static_cast<uint8_t>(file.get());
+            uint8_t b = static_cast<uint8_t>(file.get());
+            image.pixels[static_cast<std::size_t>(i)] = {r, g, b};
         }
     }
 

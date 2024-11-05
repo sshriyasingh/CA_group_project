@@ -1,10 +1,29 @@
+#include <fstream>
 #include <gtest/gtest.h>
 #include "common/binaryio.hpp"       // Include the read_ppm function
 #include <string>
 
 TEST(ReadPPMTest, ValidPPMFile) {
-    // Load the test PPM file
-    std::string file_path = "/Users/shriyasingh/Desktop/CA_group_project/test_resources/resources/ppm1.ppm";
+    /* ppm2.ppm
+    std::ofstream file("/Users/shriyasingh/Desktop/CA_group_project/test_resources/resources/ppm2.ppm", std::ios::binary);
+
+    // PPM Header
+    file << "P6\n2 2\n255\n";
+
+    // Pixel data: R, G, B values for each pixel in binary format
+    std::vector<uint8_t> pixel_data = {
+        255, 0, 0,     // Red
+        0, 255, 0,     // Green
+        0, 0, 255,     // Blue
+        255, 255, 0    // Yellow
+    };
+
+    file.write(reinterpret_cast<char*>(pixel_data.data()), static_cast<std::streamsize>(pixel_data.size()));
+
+    file.close();
+*/
+
+    std::string file_path = "/Users/shriyasingh/Desktop/CA_group_project/test_resources/resources/ppm2.ppm";
 
     Image image = read_ppm(file_path);
 

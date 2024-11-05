@@ -50,3 +50,13 @@ add_subdirectory(utest-imgaos)
 add_subdirectory(utest-imgsoa)
 add_subdirectory(ftest-aos)
 add_subdirectory(ftest-soa)
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+=======
+=======
+add_subdirectory(ftest-soa)
+>>>>>>> df2f1bb933f1c1886cd00677794c993e4f98345a
+>>>>>>> ea93c426398db1e7c04f919d9832baf94fdb8249
+>>>>>>> 5ef59e0f24a51a0cc1b9c9a7d694626d480c604d
